@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-if (!isset($_SESSION["id"])) { //jika tidak ada id
-   $this->session->set_flashdata('type', 'alert-danger');
-   $this->session->set_flashdata('pesan', '<strong>Error!</strong> Anda harus login terlebih dahulu');
-   redirect();
-   exit;
-}
+// if (!isset($_SESSION["id"])) { //jika tidak ada id
+//    $this->session->set_flashdata('type', 'alert-danger');
+//    $this->session->set_flashdata('pesan', '<strong>Error!</strong> Anda harus login terlebih dahulu');
+//    redirect();
+//    exit;
+// }
 
 ?>
         <!-- untuk daftar menu dst, cek header.php-->
@@ -68,7 +68,7 @@ if (!isset($_SESSION["id"])) { //jika tidak ada id
                                     <tr>
                                         <th style="width:10px">Nomor</th>
                                         <th>Judul Buku</th>
-                                        <th>Penulis</th>
+                                        <th>Email Penulis</th>
                                         <th>Penerbit</th>
                                         <th>Tanggal</th>
                                         <th>Aksi</th>
@@ -151,7 +151,7 @@ if (!isset($_SESSION["id"])) { //jika tidak ada id
                         html += '<tr>';
                         html += '<td>'+no+'</td>';
                         html += '<td>'+data[i].nama_buku+'</td>';
-                        html += '<td>'+data[i].penulis+'</td>';
+                        html += '<td>'+data[i].email_penulis+'</td>';
                         html += '<td>'+data[i].penerbit+'</td>';
                         html += '<td>'+data[i].tanggal+'</td>';
                          // KOLOM AKSI
@@ -191,7 +191,7 @@ if (!isset($_SESSION["id"])) { //jika tidak ada id
                         html += '<tr>';
                         html += '<td>'+no+'</td>';
                         html += '<td>'+data[i].nama_buku+'</td>';
-                        html += '<td>'+data[i].penulis+'</td>';
+                        html += '<td>'+data[i].email_penulis+'</td>';
                         html += '<td>'+data[i].penerbit+'</td>';
                         html += '<td>'+data[i].tanggal+'</td>';
                         html += '<td>';

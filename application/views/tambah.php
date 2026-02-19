@@ -31,8 +31,8 @@ if (!isset($_SESSION["id"])) { //jika tidak ada id
                             <input type="nama_buku" class="form-control col-6" name="nama_buku" placeholder="Judul buku">
                         </div>
                         <div class="form-group row container-fluid">
-                            <label class ="col-2">Penulis</label>
-                            <input type="penulis" class="form-control col-6" name="penulis" placeholder="Penulis">
+                            <label class ="col-2">Email Penulis</label>
+                            <input type="penulis" class="form-control col-6" name="penulis" placeholder="Email Penulis">
                         </div>
                         <div class="form-group row container-fluid">
                             <label class ="col-2">Penerbit</label>

@@ -37,13 +37,13 @@ class model extends CI_Model
 	
     //contoh query biasa
     public function contoh1(){
-        $query = "SELECT id_buku, nama_buku, penulis, penerbit, tanggal FROM buku";
+        $query = "SELECT id_buku, nama_buku, email_penulis, penerbit, tanggal FROM buku";
         return $this->db->query($query);
     }
 	
     //contoh query dengan input dari AJAX
     public function contoh2($inputAjax){
-        $query = "SELECT id_buku, nama_buku, penulis, penerbit, tanggal FROM buku WHERE tanggal = '".$inputAjax."'";
+        $query = "SELECT id_buku, nama_buku, email_penulis, penerbit, tanggal FROM buku WHERE tanggal = '".$inputAjax."'";
         return $this->db->query($query);
     }
 

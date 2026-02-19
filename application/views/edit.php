@@ -32,8 +32,8 @@ if (!isset($_SESSION["id"])) { //jika tidak ada id
                             <input type="text" class="form-control col-6" name="nama_buku" value="<?= $buku['nama_buku']; ?>">
                         </div>
                         <div class="form-group row container-fluid">
-                            <label class ="col-2">Penulis</label>
-                            <input type="text" class="form-control col-6" name="penulis"value="<?= $buku['penulis']; ?>">
+                            <label class ="col-2">Email Penulis</label>
+                            <input type="text" class="form-control col-6" name="email_penulis"value="<?= $buku['email_penulis']; ?>">
                         </div>
                         <div class="form-group row container-fluid">
                             <label class ="col-2">Penerbit</label>

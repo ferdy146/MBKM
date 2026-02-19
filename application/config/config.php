@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 date_default_timezone_set('Asia/Jakarta');
 
-$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/coba';
+$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/MBKM';
 //$config['base_url'] = 'https://'.$_SERVER['SERVER_NAME'].'/coba'; //live server dengan https
 
 $config['index_page'] = '';
